@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    url = "https://gist.githubusercontent.com/lawrenceaph/532ae1423a43d1b17ee41780f9a93d18/raw/55dc8fac2044a5c9d7954b7287bb627b5ec73ead/message.txt"
+    url = "https://raw.githubusercontent.com/lawrenceaph/text-tree/main/one.txt"
     response = requests.get(url)
     title = "Flask on Google Cloud Run 🎉"
     message = response.text or "hi"
