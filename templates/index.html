@@ -19,7 +19,6 @@
             font-size: 44px;
             font-family:'arial';
             color: #0079c1;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
         div {
             font: size 22px;
@@ -31,6 +30,12 @@
     <div style="display:flex; flex-direction:column;">
     <h1>{{content}}</h1>
     <div>{{ message }}</div>
+    <article>
+{% markdown %}
+ {{ md }}
+{% endmarkdown %}
+</article>
     </div>
+    
 </body>
 </html>
